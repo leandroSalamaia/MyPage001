@@ -6,7 +6,7 @@
 	<title>Catálogo de produtos católicos</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<style>
-				body {
+		body {
 			background-color: #f5f5f5;
 			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		}
@@ -20,26 +20,35 @@
 			text-shadow: 1px 1px #ffffff;
 		}
 		h2 {
-			font-size: 32px;
+			font-size: 24px;
 			font-weight: bold;
 			color: #333333;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 		p {
-			font-size: 18px;
+			font-size: 16px;
 			color: #555555;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 		.card {
 			background-color: #ffffff;
 			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 			transition: transform 0.2s ease-in-out;
+			height: 150px;
 		}
 		.card:hover {
 			transform: scale(1.05);
 		}
+		.card-img-top {
+			height: 150px;
+			object-fit: cover;
+			object-position: center;
+			width: 120px;
+			float: left;
+			margin-right: 20px;
+		}
 		.card-title {
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: bold;
 			color: #666666;
 			margin-bottom: 10px;
@@ -47,13 +56,17 @@
 		.card-text {
 			font-size: 16px;
 			color: #999999;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
-		.btn-primary {
+		.btn-comprar {
 			background-color: #6c757d;
 			border-color: #6c757d;
+			color: #ffffff;
+			font-weight: bold;
+			padding: 8px 20px;
+			float: right;
 		}
-		.btn-primary:hover {
+		.btn-comprar:hover {
 			background-color: #495057;
 			border-color: #495057;
 		}
@@ -63,43 +76,53 @@
 	<div class="container">
 		<h1>Melhor seleção de Livros Católicos</h1>
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-12">
 				<div class="card mb-3">
 					<img class="card-img-top" src="https://m.media-amazon.com/images/I/41Voe9L+n5L._SX333_BO1,204,203,200_.jpg" alt="Produto 1">
 					<div class="card-body">
 						<h5 class="card-title">Tratado do Purgatório</h5>
 						<p class="card-text">Ao parecer, Santa Catarina não escreveu de sua mão nenhuma das obras que se lhe atribuem, mas que estas são recopilações feitas por amigos e por seus discípulos. Dos anos 1520 aos anos 1525 parece datar o códice Dx, em que Ettore Vernazza, segundo se crê, escreve ou recopila ao menos os primeiros escritos da Opus Cateriniano.</p>
-						<a href="https://amzn.to/40f2RXW" class="btn btn-primary">Comprar</a>
+						<a href="https://amzn.to/40f2RXW" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-12">
 				<div class="card mb-3">
 					<img class="card-img-top" src="https://m.media-amazon.com/images/I/41-xVOpRXmL._SX310_BO1,204,203,200_.jpg" alt="Produto 2">
 					<div class="card-body">
 						<h5 class="card-title">Filoteia - introdução à vida devota</h5>
 						<p class="card-text">Nesta obra, São Francisco de Sales se dirige a Filoteia, que significa uma alma que "ama a Deus" e é para essas almas que escreve. O livro procura ajudar Filoteia a percorrer com resolução, empenho, confiança e ardor, o caminho da vida devota, apresentando-lhe doutrina eclesial as virtudes necessárias, as ciladas do inimigo e os benefícios da solidão.</p>
-						<a href="https://amzn.to/41Ac7XS" class="btn btn-primary">Comprar</a>
+						<a href="https://amzn.to/41Ac7XS" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-12">
 				<div class="card mb-3">
 					<img class="card-img-top" src="https://m.media-amazon.com/images/I/41XjroQYeaL._SX323_BO1,204,203,200_.jpg" alt="Produto 3">
 					<div class="card-body">
 						<h5 class="card-title">Revelações </h5>
 						<p class="card-text">Esta obra reúne os melhores trechos do diálogo de Santa Catarina com Deus, diálogo em que a alma da serva pergunta humildemente sobre a missão redentora de Cristo, o inferno, a graça da conversão e o futuro da humanidade.</p>
-						<a href="https://amzn.to/3oiW2rb" class="btn btn-primary">Comprar</a>
+						<a href="https://amzn.to/3oiW2rb" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-12">
 				<div class="card mb-3">
 					<img class="card-img-top" src="https://m.media-amazon.com/images/I/51lpBQ9FrfL._SX335_BO1,204,203,200_.jpg" alt="Produto 4">
 					<div class="card-body">
 						<h5 class="card-title">O Cristão Bem Formado</h5>
 						<p class="card-text">São João Bosco, neste pequeno livro, ensina-nos que são dois os principais artifícios do maligno para afastar as almas de Deus: o primeiro é fazer crer que, para servir Deus, é preciso levar uma vida melancólica, longe de todo divertimento e prazer.</p>
-						<a href="https://amzn.to/3mBcL8K" class="btn btn-primary">Comprar</a>
+						<a href="https://amzn.to/3mBcL8K" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="card mb-3">
+					<img class="card-img-top" src="https://m.media-amazon.com/images/I/41MZs+p8XpL._SX331_BO1,204,203,200_.jpg" alt="Produto 5">
+					<div class="card-body">
+						<h5 class="card-title">Subida do Monte Carmelo</h5>
+						<p class="card-text">A Ascensão do Monte Carmelo é um tratado espiritual do século XVI do místico e poeta católico espanhol São João da Cruz. O livro é um tratamento sistemático da vida ascética em busca da união mística com Cristo.</p>
+						<a href="https://amzn.to/40c46qR" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
 					</div>
 				</div>
 			</div>
